@@ -6,8 +6,8 @@ class ToDo extends React.Component{
         return (
             <div>
                 <div className="todoItem">
-                    <p><strong>To Do :</strong> {this.props.todoProps.toDoItem}</p>
-                    <p><strong>To Complete by :</strong> {this.props.todoProps.dateToCompleteBy}</p>
+                    <p><strong>To Do :</strong> {this.props.todoProps.todoItem}</p>
+                    {/* <p><strong>To Complete by :</strong> {this.props.toDoProps.dateToCompleteBy}</p> */}
                     {/* <p><strong>Completed? :</strong> {this.props.todoProps.completed}</p> */}
                 </div>
             </div>

@@ -9,8 +9,8 @@ class todoForm extends React.Component{
         super();
         this.state = {
             todoData: todoData,
-            toDoItem: '',
-            dateToCompleteBy: '',
+            todoItem: '',
+            // dateToCompleteBy: '',
             // completed: "",
             
         }
@@ -20,26 +20,26 @@ class todoForm extends React.Component{
 addTodoItem = e =>{
     e.preventDefault();
     const newItemToDo = {
-        toDoItem: this.state.toDoItem,
-        dateToCompleteBy: this.state.dateToCompleteBy,
+        todoItem: this.state.todoItem,
+        // dateToCompleteBy: this.state.dateToCompleteBy,
         // completed: this.state.completed
     };
     this.setState({
         todoData: [...this.state.todoData, newItemToDo],
-        toDoItem: '',
-        dateToCompleteBy: '',
+        todoItem: '',
+        // dateToCompleteBy: '',
         // completed: ''
     });
 };
 
 formChange = event =>{
     this.setState({
-        [event.target.toDoItem]: event.target.value
+        todoItem: event.target.value
     })
 };
 
 render() {
-    console.log(this.state.toDoItem)
+    console.log(this.state.todoItem)
     return(
         <div className="ToDoList">
             <h1 className="todoHeader">To Do List:</h1>
@@ -55,18 +55,18 @@ render() {
                     className="inputToDo"
                     placeholder="What needs to be done?"
                     onChange={this.formChange}
-                    value={this.state.toDoItem}
+                    value={this.state.todoItem}
                     name="todoitem"
                 />
                 
-                <input 
+                {/* <input 
                     className="inputCompleteBy"
                     placeholder="By when?"
                     onChange={this.formChange}
                     value={this.state.dateToCompleteBy}
                     name="datetocompleteby"
-                />
-{/* 
+                /> */}
+                {/* 
                 <input 
                     className="inputCompleted"
                     placeholder="Completed?"
