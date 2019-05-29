@@ -1,0 +1,63 @@
+
+.ToDoList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+
+.ToDoList form{
+    margin: 0px auto;
+    margin-top: 25px;
+}
+
+.ToDoList form input {
+    margin: 0px 15px;
+}
+
+.ToDoList form .inputToDo{
+    margin-left: 0px;
+    width: 400px;
+}
+
+.ToDoList form .inputCompleteBy{
+    margin-left: -5px;
+    width: 175px;
+}
+
+
+/* .ToDoList form .inputCompleted{
+    margin-left: -5px;
+    width: 85px;
+} */
+
+.ToDoList form button {
+    border: 2px solid black;
+    background: white;
+    width: 55px;
+    margin-left: -10px;
+}
+
+.Todo-List{
+    width: 650px;
+    margin: 0px auto;
+}
+
+.todoHeader{
+    font-weight: 600;
+    color: green;
+    text-align: center;
+}
+
+.todoItem{
+    
+    border: 2px solid grey;
+    max-width: 1000px;
+    padding-left: 15px;
+    margin: 15px auto;
+}
+
+.todoItem p{
+    margin: 25px auto;
+}
