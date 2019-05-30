@@ -2,7 +2,7 @@ import React from 'react';
 
 import './App.css';
 
-import {ListItems} from './components/Data'
+import {ListItems} from './components/data'
 
 import TodoForm from "./components/TodoForm"
 import TodoItems from "./components/TodoItems"
